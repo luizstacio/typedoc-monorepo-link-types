@@ -4,6 +4,8 @@ This module helps monorepos to create a nicer documentation with cross package l
 
 > Supports TypeDoc 0.22.x
 
+### What is does?
+
 After TypeDoc has finished converting package; it will;
 
 - Look for types which are referenced and have been instantiate on other scopes and create a `link` to it.
@@ -13,7 +15,9 @@ If your project references classes which are built into the language (e.g. `HTML
 
 ### Usage
 
-`npm install typedoc-monorepo-link-types`
+```shell
+npm install typedoc-monorepo-link-types --save-dev
+```
 
 TypeDoc will automatically use this plugin when present.
 
