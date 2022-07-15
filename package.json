@@ -1,6 +1,6 @@
 {
   "name": "typedoc-monorepo-link-types",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Luiz Estácio",
   "description": "Create cross package links and include non-exported types",
   "license": "Apache-2.0",
