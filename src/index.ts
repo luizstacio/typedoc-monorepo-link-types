@@ -83,8 +83,13 @@ function onResolveBegin(knownPrograms: Map<Reflection, ts.Program>, context: Con
       context.setActiveProgram(knownPrograms.get(mod));
       const internalNs = context
         .withScope(mod)
-        .createDeclarationReflection(ReflectionKind.Namespace, void 0, void 0, internalNamespace);
-      context.finalizeDeclarationReflection(internalNs, void 0);
+        .createDeclarationReflection(
+          ReflectionKind.Namespace,
+          undefined,
+          undefined,
+          internalNamespace
+        );
+      context.finalizeDeclarationReflection(internalNs);
       return (internalContext = {
         internalContext: context.withScope(internalNs),
         reflection: internalNs,
